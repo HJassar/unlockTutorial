@@ -22,7 +22,7 @@ DOM_comboDigits.forEach((DOM_comboDigit, index) => {
     DOM_comboDigit.addEventListener('input', e => {
         // On input, check if it's a number, if so keep and switch to next input, otherwise empty the value
         if (!isNaN(e.target.value)
-            && e.target.value !== '' // fallback for backspace
+            && e.target.value.trim() !== '' // fallback for backspace
         ) {
             // Applies to all digits except the last one
             if (index < DOM_comboDigits.length - 1) DOM_comboDigits[index + 1].focus()
