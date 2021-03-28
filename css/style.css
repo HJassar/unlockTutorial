@@ -92,11 +92,11 @@ img {
     0% {
         transform: translateY(0px);
     }
-    49% {
+    49.999999% {
         transform: translateY(-10px) translateX(0);
-        opacity: 0;
     }
     50%{
+        opacity: 0;
         transform: translateY(-10px) translateX(12%);
     }
     100% {
